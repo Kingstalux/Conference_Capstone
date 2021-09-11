@@ -8,7 +8,7 @@ Next I adapted the mobile version to the desktop version of the two pages and de
 The speaker section is created dynamically using javascript. The conference page is responsive and views well on different screen sizes.
 
 ## Loom preview of project
-https://www.loom.com/share/42bd513c69fa4dc9a5d3dcd47eb46732?sharedAppSource=personal_library
+https://www.loom.com/share/9707ed9013fb447b956ad7b558033dde
 
 
 
