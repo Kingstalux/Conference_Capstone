@@ -96,3 +96,22 @@ const hideSpeakers = () => {
   document.getElementById('sixth').classList.add('hide');
 };
 
+const showButton = document.getElementById('showButton');
+showButton.onclick = function () { showSpeakers(); };
+
+const hideButton = document.getElementById('hideButton');
+hideButton.onclick = function () { hideSpeakers(); };
+
+const showMenu = () => {
+  document.getElementById('dropMenu').classList.add('view');
+};
+
+const hideMenu = () => {
+  document.getElementById('dropMenu').classList.remove('view');
+};
+
+const bars = document.getElementById('bars');
+bars.onclick = function () { showMenu(); };
+
+const cancel = document.getElementById('cancel');
+cancel.onclick = function () { hideMenu(); };
