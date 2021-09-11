@@ -22,15 +22,6 @@ body {
   margin: auto;
 }
 
-p {
-  font-family: "Lato", sans-serif;
-}
-
-.desktopNav,
-.hideButton {
-  display: none;
-}
-
 .dropMenu {
   height: 100vh;
   width: 60vw;
@@ -61,6 +52,14 @@ p {
   color: white;
 }
 
+.view {
+  display: block;
+}
+
+.desktopNav {
+  display: none;
+}
+
 .bars {
   margin: 0 auto 2em 1.5em;
   padding: 0;
@@ -73,7 +72,7 @@ p {
 }
 
 .firstPage {
-  background-image: url('images/fifalogo.jpg');
+  background-image: url('images/crop1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,12 +83,15 @@ p {
   background-color: #e6e6e6;
   opacity: 0.8;
   z-index: 1;
+  border: 1px solid #d3d3d3;
 }
 
 .headings {
   color: #ec5242;
   margin-bottom: 3em;
   margin-left: 1em;
+  text-align: center;
+  z-index: 2;
 }
 
 .headings h1 {
@@ -99,13 +101,6 @@ p {
 }
 
 .headings h2 {
-  background-image: url('images/fifalogo.jpg');
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
   font-weight: 900;
   font-size: 4em;
   font-family: 'COCOGOOSE', Arial, sans-serif;
@@ -113,9 +108,11 @@ p {
 
 .information {
   margin: auto 1em;
+  text-align: center;
 }
 
 .information p {
+  /* color: #302e2e; */
   color: #312929;
   line-height: 1.5em;
   margin-bottom: 3em;
@@ -124,186 +121,133 @@ p {
   font-weight: 500;
 }
 
-.venue h3 {
-  color: #272a31;
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 0.3em;
-  margin-left: 0.5em;
+.contact {
+  text-align: center;
+  margin-bottom: 2.5em;
 }
 
-.venue p {
+.contact p {
   color: #302e2e;
-  padding-bottom: 4em;
+  padding-bottom: 1em;
   margin-left: 1em;
 }
 
-.program {
+.mail {
+  text-decoration: underline;
+}
+
+.coverpage,
+.games {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('images/x.png');
+  text-align: center;
 }
 
-.program h2 {
-  color: white;
-  font-weight: 100;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+.coverpage h2,
+.games h2 {
+  color: #272a31;
+  margin: 2.5em 20% 0.5em 20%;
 }
 
-.program hr {
+.coverpage hr,
+.games hr {
   border-color: #ec5242;
   width: 3em;
   margin-bottom: 1em;
 }
 
-.program .cards {
-  margin: auto 1.5em 2em 1.5em;
-  padding: 0;
+.coverpage p,
+.games p {
+  margin: 1em 2em;
+  color: #302e2e;
+  line-height: 1.3em;
 }
 
-.cards div {
-  margin: 0.5em auto;
-  background-color: rgba(255, 255, 255, 0.097);
-  display: grid;
-  grid-template-columns: 20% 30% 50%;
-  padding: 1em;
+.alternate {
+  position: relative;
+  height: 50vh;
+  width: 80vw;
+  margin: 3em 4em;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
 }
 
-.cards div:hover {
-  border: 2px solid white;
-}
-
-.cards div h3 {
-  color: #ec5242;
-}
-
-.info p {
-  margin-bottom: 2em;
-}
-
-.cards div p {
-  color: white;
-}
-
-.button {
-  height: 4em;
-  width: 60vw;
-  text-align: center;
-  color: white;
-  background-color: #ec5242;
-  margin-bottom: 2.5em;
-  border: none;
-}
-
-.button:hover {
-  cursor: pointer;
-  color: #ec5242;
-  background-color: white;
-}
-
-.button:active {
-  background-color: #ec5242;
-  color: white;
-}
-
-.message {
-  display: none;
-}
-
-.speakers {
+.gameImage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-inline: 1.5em;
 }
 
-.speakers h2 {
-  color: #272a31;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
+.alt {
+  position: relative;
+  height: 65vh;
+  width: 80vw;
 }
 
-.speakers hr {
-  border-color: #ec5242;
-  width: 4em;
-  margin-bottom: 2em;
+.alternate img {
+  width: 75vw;
+  height: auto;
+  margin-bottom: 1em;
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  border: 4px solid #ec5242;
+  border-radius: 25px;
 }
 
-.speaker {
-  display: flex;
-}
-
-.person {
-  background-image: url('images/chess.jfif');
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: 4em;
-}
-
-.person img {
-  height: 6.5em;
-  width: 6.5em;
-  margin-right: 1em;
-  margin-left: 1em;
+.alt img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  border: 4px solid #ec5242;
+  border-radius: 25px;
+  height: auto;
+  width: 75vw;
   margin-top: 1em;
 }
 
-.info {
-  margin-left: 0.3em;
-  line-height: 1em;
+.alternate .top,
+.alt .top {
+  animation-name: fadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
 }
 
-.info h4 {
-  color: #ec5242;
-  margin: 0.5em auto 1em auto;
-}
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
 
-.show {
-  display: flex;
-}
+  45% {
+    opacity: 1;
+  }
 
-.hide {
-  display: none;
-}
+  55% {
+    opacity: 0;
+  }
 
-.view {
-  display: block;
-}
-
-.speakerButton {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2em;
-}
-
-.speakerButton button {
-  width: 85vw;
-  padding: 1.1em;
-  color: #272a31;
-  background-color: white;
-  margin-bottom: 2em;
-}
-
-.speakerButton button i {
-  color: #ec5242;
-}
-
-.own-class {
-  color: white;
+  100% {
+    opacity: 0;
+  }
 }
 
 .partner {
   background-color: #272a31;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  display: none;
-}
-
-.see {
-  display: flex;
 }
 
 .partner h2 {
@@ -320,6 +264,7 @@ p {
 }
 
 .partners {
+  /* display: flex; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -328,18 +273,19 @@ p {
 }
 
 .partners img {
+  /* margin: 1em; */
   margin: 0.2em;
   height: 7em;
   width: 7em;
 }
 
 .footer {
+  display: flex;
   flex-direction: column;
   margin: 2.5em;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2em;
-  display: none;
 }
 
 .footer img {
@@ -352,16 +298,8 @@ p {
 }
 
 @media (min-width: 1024px) {
-  .bars,
-  .speakerButton {
+  .bars {
     display: none;
-  }
-
-  #third,
-  #fourth,
-  #fifth,
-  #sixth {
-    display: flex;
   }
 
   .desktopNav {
@@ -416,13 +354,6 @@ p {
     color: #ec5242;
   }
 
-  .message a {
-    text-decoration: none;
-    color: white;
-    margin: 3.5em auto;
-    font-size: 20px;
-  }
-
   .navLinks a:hover {
     color: #ec5242;
   }
@@ -440,62 +371,55 @@ p {
   }
 
   .headings {
-    padding-top: 4em;
-    margin-left: 8em;
-    max-width: 55vw;
+    margin: 4em 30%;
   }
 
   .information {
-    width: 45vw;
-    max-width: 750px;
-    margin-left: 8em;
+    margin: 1em 10%;
   }
 
-  .venue {
-    margin-left: 8em;
-    max-width: 65vw;
+  .coverpage p {
+    margin: 1em 10%;
   }
 
-  .cards {
+  .alternate {
+    position: relative;
+    height: 48em;
+    width: 65em;
+    margin: 2em 4em;
     display: flex;
-    justify-content: space-between;
-    max-width: 78vw;
-  }
-
-  .cards div {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-right: 0.3em;
-    text-align: center;
+    justify-content: center;
   }
 
-  .button {
-    display: none;
-  }
-
-  .message {
-    margin-top: 2em;
-    display: block;
-    margin-bottom: 5em;
-    text-decoration: underline;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-inline: 8em;
-    margin-top: 1.5em;
-    grid-gap: 1em;
-    margin-bottom: 4em;
-  }
-
-  #speak {
-    display: none;
-  }
-
-  .partner {
+  .gameImage {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .alt {
+    position: relative;
+    height: 39em;
+    width: 39em;
+    padding: 0;
+  }
+
+  .alternate img {
+    height: 720px;
+    width: 720px;
+    margin: 2.5em 10em;
+    border-radius: 25px;
+    margin-bottom: 1em;
+  }
+
+  .alt img {
+    height: 31.5em;
+    width: 31.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
   }
 
   .partners {
@@ -508,9 +432,9 @@ p {
   }
 
   .footer {
-    display: flex;
     margin-inline: 12em;
     flex-direction: row;
+    margin-bottom: 2em;
   }
 
   .footer img {

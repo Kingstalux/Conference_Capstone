@@ -4,12 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Fifa 21 Conference</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <title>Fifa 21 Conference</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- 
+    <div class="dropMenu" id="dropMenu">
+        <img src="images/Iconx.png" alt="cancel" id="cancel">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Campaign</a></li>
+        </ul>
+    </div>
+
+    <header>
+        
+        <div class="desktopNav">
+            <div class="darkNav">
+                <ul>
+                    <li><i class="facebook f icon"></i></li>
+                    <li><i class="twitter icon"></i></li>
+                    <li>English</li>
+                    <li>My Page</li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+            <div class="normalNav">
+                <div class="logo"><img src="images/fifalogo.png" alt="logo"></div>
+                <div class="navLinks">
+                    <div class="active"><a href="#">Home</a></div>
+                    <a href="about.html">About</a>
+                    <a href="#">Program</a>
+                    <a href="#">News</a>
+                    <a href="#">Sponsor</a>
+                    <button class="campaign" type="button"><strong>Campaign</strong></button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="firstPage">
+        <div class="layer">
+
+            <div class="bars">
+                <img src="images/bars2.png" alt="bars icon" id="bars">
+            </div>
+            
+            <div class="headings">
+                <h1>EA Sports Presents</h1>
+                <h2>Fifa 2021 Pre Game Press Conference</h2>
+            </div>
+            <div class="information">
+                <p>FIFA 21 looks set to make some welcome changes across the board. From FUT to Pro Clubs, everything is getting a new lick of paint, with Career Mode getting the most sizeable update it’s seen in years. To help get you up to speed, we’ve put together this FIFA 21 Career Mode Guide. We’ll go over all of the changes that have been made since last year, and provide some details on the major new features.</p>
+            </div>
+            <div class="venue">
+                <div>
+                    <h3>10 _ 12 September 2021  Zurich, Switzerland</h3>
+                </div>
+                <div>
+                    <p>@Hotel Krone Unterstrass</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="program">
+        <h2>Main Program</h2>
+        <hr>
+
+        <div class="cards">
+            <div>
+                <i class="clipboard icon big own-class"></i>
+                <h3>New Game Modes</h3>
+                <p>
+                    For the first time on Steam, FIFA 21 presents: VOLTA FOOTBALL, a game mode that strips football back to its core.
+                </p>
+            </div>
+            <div>
+                <i class="balance scale icon big own-class"></i>
+                <h3>Game Features</h3>
+                <p>
+                    Get rewarded for your creativity and control with new features in the most intelligent FIFA gameplay to date
+                </p>
+            </div>
+            <div>
+                <i class="paste icon big own-class"></i>
+                <h3>Pitch Notes</h3>
+                <p>
+                    Go in-depth on the new features with all the details directly from the FIFA 21 development team.
+                </p>
+            </div>
+            <div>
+                <i class="cogs icon big own-class"></i>
+                <h3>Leagues</h3>
+                <p>
+                    FIFA 21 will allow you to play single player leagues of the real countries such as FA Cup, Premier League...
+                </p>
+            </div>
+            <div>
+                <i class="handshake icon big own-class"></i>
+                <h3>Prices</h3>
+                <p>
+                    FIFA 21 will be available for free for all subscribers of EA Play and Xbox Game Pass Ultimate.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <button class="button" type="button">Join International Fifa 2021 Conference</button>
+        </div>
+
+        <div class="message">
+            <a href="#">SEE THE WHOLE PROGRAM</a>
+        </div>
+    </section>
+
+    <section class="speakers">
+        <h2>Featured Speakers</h2>
+        <hr>
+        <div class="grid">
+            <span id="speak"></span>
+        </div>
+        
+    </section>
+
+    <section class="partner" id="partners">
+        <h2>Partners</h2>
+        <hr>
+        <div class="partners">
+            <img src="images/premier.png" alt="premier league logo" class="partner1">
+            <img src="images/laliga.png" alt="laliga logo" class="partner2">
+            <img src="images/league1.png" alt="league1 logo" class="partner3">
+            <img src="images/bundes.png" alt="bundesliga logo" class="partner4">
+            <img src="images/champions2.jpg" alt="champions league logo" class="partner6">
+            <img src="images/euro.png" alt="europa logo" class="partner6">
+        </div>
+
+    </section>
+
+    <footer class="footer" id="footer">
+        <div>
+            <img src="images/unnamed.png" alt="logo">
+        </div>
+        <div>
+            <p>@2021 Kingstalux creativity<br>Some Rights Reserved</p>
+        </div>
+    </footer>
+
+    
+    <div class="speakerButton">
+        <button type="button" id="showButton" class="showButton">MORE <i class="angle down icon large"></i></button>
+    </div>
+
+    <div class="speakerButton">
+        <button type="button" id="hideButton" class="hideButton">LESS <i class="angle up icon large"></i></button>
+    </div>
+    
+
     <script src="script.js"></script>
 </body>
 </html>
