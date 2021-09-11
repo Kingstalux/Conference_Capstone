@@ -85,7 +85,7 @@ const showSpeakers = () => {
   document.getElementById('fourth').classList.remove('hide');
   document.getElementById('fifth').classList.remove('hide');
   document.getElementById('sixth').classList.remove('hide');
-  document.getElementById('partners').classList.add('show')
+  document.getElementById('partners').classList.add('see');
 };
 
 const hideSpeakers = () => {
@@ -95,7 +95,7 @@ const hideSpeakers = () => {
   document.getElementById('fourth').classList.add('hide');
   document.getElementById('fifth').classList.add('hide');
   document.getElementById('sixth').classList.add('hide');
-  document.getElementById('partners').classList.remove('show');
+  document.getElementById('partners').classList.remove('see');
 };
 
 const showButton = document.getElementById('showButton');

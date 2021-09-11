@@ -33,7 +33,7 @@ p {
 
 .dropMenu {
   height: 100vh;
-  width: 50vw;
+  width: 60vw;
   position: fixed;
   z-index: 2;
   padding: 1.5em;
@@ -291,13 +291,12 @@ p {
 
 .partner {
   background-color: #272a31;
-  display: flex;
   flex-direction: column;
   align-items: center;
   display: none;
 }
 
-.show {
+.see {
   display: flex;
 }
 
@@ -329,7 +328,6 @@ p {
 }
 
 .footer {
-  display: flex;
   flex-direction: column;
   margin: 2.5em;
   justify-content: space-between;
