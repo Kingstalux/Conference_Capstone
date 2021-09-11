@@ -78,3 +78,21 @@ for (let i = 5; i >= 0; i -= 1) {
   speak.insertAdjacentHTML('afterend', renderSpeakers(p));
 }
 
+const showSpeakers = () => {
+  document.getElementById('showButton').classList.add('hide');
+  document.getElementById('hideButton').classList.add('view');
+  document.getElementById('third').classList.remove('hide');
+  document.getElementById('fourth').classList.remove('hide');
+  document.getElementById('fifth').classList.remove('hide');
+  document.getElementById('sixth').classList.remove('hide');
+};
+
+const hideSpeakers = () => {
+  document.getElementById('showButton').classList.remove('hide');
+  document.getElementById('hideButton').classList.remove('view');
+  document.getElementById('third').classList.add('hide');
+  document.getElementById('fourth').classList.add('hide');
+  document.getElementById('fifth').classList.add('hide');
+  document.getElementById('sixth').classList.add('hide');
+};
+
