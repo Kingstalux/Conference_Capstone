@@ -78,16 +78,9 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
-  /* color: #ec5242; */
-
-  /* color: #272a31; */
-
-  /* color: #d3d3d3; */
 }
 
 .layer {
-  /* background-color: #d3d3d3; */
   background-color: #e6e6e6;
   opacity: 0.8;
   z-index: 1;
@@ -348,3 +341,164 @@ p {
   cursor: pointer;
 }
 
+@media (min-width: 1024px) {
+  .bars,
+  .speakerButton {
+    display: none;
+  }
+
+  #third,
+  #fourth,
+  #fifth,
+  #sixth {
+    display: flex;
+  }
+
+  .desktopNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .darkNav {
+    background-color: #272a31;
+  }
+
+  .darkNav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    float: right;
+    margin-right: 7.3em;
+  }
+
+  .darkNav ul li {
+    padding: 1em;
+  }
+
+  .normalNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0.5em auto 0.5em 8em;
+  }
+
+  .logo img {
+    width: 4em;
+    height: 4em;
+  }
+
+  .navLinks {
+    display: flex;
+    margin-right: 8em;
+  }
+
+  .navLinks a {
+    text-decoration: none;
+    color: #272a31;
+    padding: 1em 2em;
+  }
+
+  .active a {
+    color: #ec5242;
+  }
+
+  .message a {
+    text-decoration: none;
+    color: white;
+    margin: 3.5em auto;
+    font-size: 20px;
+  }
+
+  .navLinks a:hover {
+    color: #ec5242;
+  }
+
+  .campaign {
+    color: #ec5242;
+    border: 4px solid #ec5242;
+    background-color: white;
+    padding-inline: 1em;
+  }
+
+  .active {
+    display: flex;
+    align-items: center;
+  }
+
+  .headings {
+    padding-top: 4em;
+    margin-left: 8em;
+    max-width: 55vw;
+  }
+
+  .information {
+    width: 45vw;
+    max-width: 750px;
+    margin-left: 8em;
+  }
+
+  .venue {
+    margin-left: 8em;
+    max-width: 65vw;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    max-width: 78vw;
+  }
+
+  .cards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.3em;
+    text-align: center;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .message {
+    margin-top: 2em;
+    display: block;
+    margin-bottom: 5em;
+    text-decoration: underline;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 8em;
+    margin-top: 1.5em;
+    grid-gap: 1em;
+    margin-bottom: 4em;
+  }
+
+  #speak {
+    display: none;
+  }
+
+  .partners {
+    display: flex;
+  }
+
+  .partner img {
+    width: 11em;
+    height: 11em;
+  }
+
+  .footer {
+    margin-inline: 12em;
+    flex-direction: row;
+  }
+
+  .footer img {
+    width: 25em;
+  }
+}
