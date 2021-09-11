@@ -69,7 +69,7 @@ const renderSpeakers = (p) => {
         </div>
     `;
   return speakerCard;
-}
+};
 
 const speak = document.getElementById('speak');
 
