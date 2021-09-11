@@ -278,6 +278,7 @@ p {
   padding: 1.1em;
   color: #272a31;
   background-color: white;
+  margin-bottom: 2em;
 }
 
 .speakerButton button i {
@@ -293,6 +294,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
+}
+
+.show {
+  display: flex;
 }
 
 .partner h2 {
@@ -309,7 +315,6 @@ p {
 }
 
 .partners {
-  /* display: flex; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -330,6 +335,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2em;
+  display: none;
 }
 
 .footer img {
@@ -484,6 +490,10 @@ p {
     display: none;
   }
 
+  .partner {
+    display: flex;
+  }
+
   .partners {
     display: flex;
   }
@@ -494,6 +504,7 @@ p {
   }
 
   .footer {
+    display: flex;
     margin-inline: 12em;
     flex-direction: row;
   }
