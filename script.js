@@ -56,3 +56,25 @@ const speakers = [
   },
 ];
 
+// Rendering speakers
+function renderSpeakers(p) {
+  const speakerCard = `
+        <div class="speaker ${p.class}" id="${p.id}">
+            <div class="person"><img src="${p.image}" alt="speakerImage"></div>
+            <div class="info">
+                <h3>${p.name}</h3>
+                <h4><i>${p.title}</i></h4>
+                <p>${p.info}</p>
+            </div>
+        </div>
+    `;
+  return speakerCard;
+}
+
+const speak = document.getElementById('speak');
+
+for (let i = 5; i >= 0; i -= 1) {
+  const p = speakers[i];
+  speak.insertAdjacentHTML('afterend', renderSpeakers(p));
+}
+
