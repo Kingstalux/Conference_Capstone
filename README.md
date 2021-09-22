@@ -22,7 +22,7 @@ https://www.loom.com/share/9707ed9013fb447b956ad7b558033dde
 
 ## Live Page
 
-[Live Page Link](https://kingstalux.github.io/Capstone/)
+[Live Page Link](https://kingstalux.github.io/Conference_Capstone/)
 
 ## Getting Started
 
